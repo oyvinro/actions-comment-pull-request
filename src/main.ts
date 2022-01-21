@@ -13,7 +13,7 @@ async function run() {
     }
     const pull_request_number = context.payload.pull_request.number;
     //const pull_request_reviewers = context.payload.pull_request.requested_reviewers.users[0].login;
-    const pull_request_reviewers = context.payload.pull_request.requested_reviewers.users.length;
+    const pull_request_reviewers = 1;//context.payload.pull_request.requested_reviewers.users.length;
 
 
     const octokit = new github.GitHub(github_token);
