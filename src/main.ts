@@ -18,7 +18,7 @@ async function run() {
     const new_comment = octokit.issues.createComment({
         ...context.repo,
         issue_number: pull_request_number,
-        body: pull_request_reviewers
+        body: message + " and " + pull_request_reviewers
       });
 
   } catch (error) {
